@@ -38,17 +38,32 @@ const Profile = ({ user }) => {
     <div>
       {profileUser ? (
         <div>
-          <h2>{profileUser.name}'s Profile</h2>
-          <p>Email: {profileUser.email}</p>
-          <p>Name: {profileUser.name}</p>
-          <p>Age: {profileUser.age}</p>
-          <p>DOB: {profileUser.dob}</p>
-          <Link to="/">Home</Link>
-
+          <div className="profile-header">
+            <h2>{profileUser.name}'s Profile</h2>
+          </div>
+          <div className="inf">
+            <p className="profile-info">
+              <span>Email:</span> {profileUser.email}
+            </p>
+            <p className="profile-info">
+              <span>Name:</span> {profileUser.name}
+            </p>
+            <p className="profile-info">
+              <span>Age:</span>
+              {profileUser.age}
+            </p>
+            <p className="profile-info">
+              <span>DOB:</span>
+              {profileUser.dob}
+            </p>
+            <Link to="/" className="profile-link">
+              Home
+            </Link>
+          </div>
           {/* Display additional profile information as needed */}
         </div>
       ) : (
-        <p>User not found</p>
+        <p className="no-user">User not found</p>
       )}
     </div>
   );

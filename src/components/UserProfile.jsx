@@ -42,11 +42,13 @@ const UserProfile = () => {
     <div>
       {userData ? (
         <div>
-          <h2>{userData.name}'s Profile</h2>
-          <p>Email: {userData.email}</p>
-          <p>Age: {userData.age}</p>
-          <p>Date of Birth: {userData.dob}</p>
-          <Link to="/">Home</Link>
+          <h2 className="header">{userData.name}'s Profile</h2>
+          <p className="info">Email: {userData.email}</p>
+          <p className="info">Age: {userData.age}</p>
+          <p className="info">Date of Birth: {userData.dob}</p>
+          <Link to="/" className="link">
+            Home
+          </Link>
           {/* Add other user information here */}
         </div>
       ) : (
