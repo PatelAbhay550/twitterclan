@@ -4,6 +4,12 @@ ul {
   list-style-type: none;
   padding: 0;
 }
+form{
+  margin-bottom:30px;
+}
+form button{
+  margin-top:30px;
+}
 
 li {
   border: 1px solid #ccc;
