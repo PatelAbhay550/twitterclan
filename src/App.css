@@ -1,0 +1,222 @@
+/* src/components/Timeline.css */
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+p {
+  margin: 0;
+}
+
+/* Add more styles as needed */
+/* Reset some default browser styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+/* Apply a background color and center content */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Add a subtle box shadow to the container */
+.container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Add a bit of spacing between components */
+.container > * {
+  margin-bottom: 20px;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Add hover effect to navigation links */
+nav a:hover {
+  background-color: #555;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Auth page specific styles */
+.auth-container {
+  text-align: center;
+}
+
+.auth-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Style form inputs */
+.auth-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Style form buttons */
+.auth-form button {
+  width: 100%;
+}
+
+/* src/components/Timeline.css */
+
+/* Timeline page specific styles */
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tweet {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  width: 80%;
+  margin: 10px auto;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Style user profile pictures */
+.tweet img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Style tweet timestamps */
+.tweet small {
+  font-size: 0.8em;
+  color: #888;
+}
+
+/* Style the add tweet form */
+.add-tweet-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Add Tweet and View Profile links */
+.add-links {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.add-links a {
+  margin-right: 20px;
+  font-size: 20px;
+  color: #3498db;
+  text-decoration: none;
+}
+
+.add-links a:hover {
+  text-decoration: underline;
+}
+
+/* Style user profile pictures */
+.tweet img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Style tweet timestamps */
+.tweet .timestamp {
+  font-size: 0.8em;
+  color: #888;
+}
+
+/* Style the add tweet form */
+.add-tweet-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+/* Profile page specific styles */
+.profile-container {
+  text-align: center;
+}
+
+.profile-info {
+  margin-bottom: 20px;
+}
+
+/* Style the update name form */
+.update-name-form {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+/* Style the logout button */
+.logout-button {
+  background-color: #d9534f;
+}
+
+.logout-button:hover {
+  background-color: #c9302c;
+}
