@@ -1,8 +1,11 @@
+// UserProfile.jsx
+
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { collection, query, where, getDocs } from "firebase/firestore";
 import { firestore } from "../firebase";
 import { Link } from "react-router-dom";
+
 const UserProfile = () => {
   const { userId } = useParams();
   const [userData, setUserData] = useState(null);
@@ -39,7 +42,7 @@ const UserProfile = () => {
   }, [userId]);
 
   return (
-    <div>
+    <div className="user-profile-container">
       {userData ? (
         <div>
           <h2 className="header">{userData.name}'s Profile</h2>

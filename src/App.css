@@ -4,12 +4,6 @@ ul {
   list-style-type: none;
   padding: 0;
 }
-form{
-  margin-bottom:30px;
-}
-form button{
-  margin-top:30px;
-}
 
 li {
   border: 1px solid #ccc;
@@ -101,7 +95,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #38873c;
 }
 
 /* Auth page specific styles */
@@ -470,4 +464,231 @@ div {
   font-size: 30px;
   color: #ff0000;
   font-weight: bold;
+}
+/* Add this CSS to your stylesheet or component */
+
+/* Container styles */
+.tweet-form-container {
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Heading styles */
+h2 {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+/* Textarea styles */
+.tweet-message-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/* File input styles */
+.tweet-image-input {
+  margin-bottom: 12px;
+}
+
+/* Button styles */
+.post-tweet-button {
+  padding: 10px 16px;
+  margin-right: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+/* Link button styles */
+.go-to-home-button {
+  text-decoration: none;
+}
+
+/* Full-width button */
+.full-width {
+  width: 100%;
+  margin-right: 0;
+}
+
+/* Hover styles */
+.post-tweet-button:hover {
+  background-color: #0c7abf;
+}
+
+/* Hover styles for other buttons if needed */
+.go-to-home-button:hover {
+  /* Add styles for hover state */
+}
+/* UserProfile.css */
+
+/* Container styles */
+.user-profile-container {
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Heading styles */
+.header {
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+/* Information styles */
+.info {
+  margin-bottom: 8px;
+}
+
+/* Link styles */
+.link {
+  text-decoration: none;
+  color: #1da1f2;
+  margin-top: 16px;
+  display: block;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+/* Comment.css */
+
+.comment-container {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.comment-header {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.comment-list {
+  margin-bottom: 20px;
+}
+
+.comment-item {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+}
+
+.comment-timestamp {
+  color: #888;
+  font-size: 0.8em;
+}
+
+.comment-textarea {
+  margin-bottom: 10px;
+}
+
+.post-comment-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.profile-link {
+  display: block;
+  margin-top: 10px;
+  color: #3498db;
+}
+.img-tw-pop {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* src/components/Auth.css */
+
+/* Container for the authentication form */
+.auth-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+.auth-heading {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Label and input styles */
+.auth-label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.auth-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Additional input styles for signup form */
+.auth-input.additional {
+  margin-bottom: 10px;
+}
+
+/* Button style */
+.auth-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #1da1f2;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.auth-button:hover {
+  background-color: #0f91db;
+}
+
+/* Link style */
+.auth-link {
+  cursor: pointer;
+  color: #1da1f2;
+}
+
+.auth-link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 420px) {
+  .img-tw {
+    height: 210px;
+  }
+  .img-tw-pop {
+    width: 100%;
+    height: 100%;
+    background-color: #1da0f248;
+    object-fit: contain;
+  }
 }

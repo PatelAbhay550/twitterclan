@@ -13,6 +13,7 @@ import Timeline from "./components/Timeline";
 import Dashboard from "./components/Dashboard";
 import Profile from "./components/Profile";
 import UserProfile from "./components/UserProfile";
+import Comment from "./components/Comment";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -37,6 +38,7 @@ const App = () => {
           path="/timeline"
           element={user ? <Timeline user={user} /> : <Navigate to="/auth" />}
         />
+
         <Route
           path="/tweet"
           element={user ? <TweetForm user={user} /> : <Navigate to="/auth" />}
@@ -49,11 +51,11 @@ const App = () => {
           path="/Profile"
           element={user ? <Profile user={user} /> : <Navigate to="/auth" />}
         />
-
         <Route
           path="/dashboard"
           element={user ? <Dashboard user={user} /> : <Navigate to="/auth" />}
         />
+        <Route path="/comments/:tweetId" element={<Comment user={user} />} />
       </Routes>
     </Router>
   );
