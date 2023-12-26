@@ -62,6 +62,9 @@ const Profile = () => {
           <p>Email: {profileUser.email}</p>
           <p>Age: {profileUser.age}</p>
           <p>DOB: {profileUser.dob}</p>
+          <Link to="/" className="link">
+            Home
+          </Link>
           {/* Add more profile details as needed */}
         </div>
       ) : (
