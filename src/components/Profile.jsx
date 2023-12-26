@@ -4,6 +4,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useParams } from "react-router-dom";
 import { firestore } from "../firebase";
 import { Link } from "react-router-dom";
+import { FiUser } from "react-icons/fi";
 
 const Profile = () => {
   const [profileUser, setProfileUser] = useState(null);
@@ -56,8 +57,11 @@ const Profile = () => {
   return (
     <div>
       {profileUser ? (
-        <div>
+        <div className="profile-container">
           <h2>User Profile</h2>
+          <div className="profile-avatar">
+            <FiUser size={64} />
+          </div>
           <p>Name: {profileUser.name}</p>
           <p>Email: {profileUser.email}</p>
           <p>Age: {profileUser.age}</p>

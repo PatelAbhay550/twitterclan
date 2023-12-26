@@ -189,9 +189,6 @@ button:hover {
   margin: 0 auto;
 }
 /* Profile page specific styles */
-.profile-container {
-  text-align: center;
-}
 
 .profile-info {
   margin-bottom: 20px;
@@ -416,12 +413,6 @@ div {
   background-color: #007bb5;
 }
 /* src/components/Profile.css */
-
-.profile-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
 
 .profile-header {
   display: flex;
@@ -691,4 +682,27 @@ h2 {
     background-color: #1da0f248;
     object-fit: contain;
   }
+}
+.profile-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-avatar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: #1da1f2;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
 }
