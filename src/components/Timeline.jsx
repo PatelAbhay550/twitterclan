@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import { collection, query, orderBy, getDocs, doc } from "firebase/firestore";
 import { storage } from "../firebase";
 import { ref } from "firebase/storage";
+import { MdHome } from "react-icons/md";
+import { CgProfile } from "react-icons/cg";
+import { MdPostAdd } from "react-icons/md";
 import { firestore } from "../firebase";
 import { getDownloadURL } from "firebase/storage";
 import { Link } from "react-router-dom";
@@ -51,11 +54,20 @@ const Timeline = ({ user }) => {
 
   return (
     <div>
-      <div className="add-links">
-        <h2>Home</h2>
-        <Link to="/tweet">Add Tweet</Link>
+            <div className="add-links">
+        <h2>
+          <MdHome className="home" />
+          Home
+        </h2>
+        <Link to="/tweet">
+          <MdPostAdd className="home" />
+          Add Tweet
+        </Link>
         <br />
-        <Link to="/Profile">View Profile</Link>
+        <Link to="/Profile">
+          <CgProfile className="home" />
+          View Profile
+        </Link>
       </div>
       <div className="tw-op">
         {tweets.map((tweet) => (
